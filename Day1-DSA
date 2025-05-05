@@ -1,1 +1,160 @@
+## Java Programming Notes
+
+### Method vs Function in Java
+
+* **Function** is a concept where a block of code performs a specific task. In Java, everything resides inside a class, so standalone functions don't exist like in languages such as C.
+* **Method** is a function that belongs to a class. In Java, every function is a method.
+
+**Example:**
+
+```java
+public class Example {
+    public static void sayHello() {  // method
+        System.out.println("Hello");
+    }
+}
+```
+
+### Object in Java
+
+An **Object** is an instance of a class. It has:
+
+* **State (fields/attributes)**
+* **Behavior (methods/functions)**
+
+**Example:**
+
+```java
+class Dog {
+    String breed;
+    void bark() {
+        System.out.println("Woof");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.bark();
+    }
+}
+```
+
+### Function Calling, Definition, and Declaration
+
+* **Declaration:** Tells the compiler about function name, return type, and parameters.
+* **Definition:** Contains the actual body of the function.
+* **Calling:** Invoking the function to execute.
+
+**Example:**
+
+```java
+// Declaration and Definition
+public static int add(int a, int b) {
+    return a + b;
+}
+
+// Calling
+int result = add(3, 5);
+```
+
+---
+
+## DSA in Java – Important Algorithms and Topics
+
+### Array
+
+* Traversal
+* Insertion & Deletion
+* Two Pointer Technique
+
+### String
+
+* Reversal
+* Palindrome Check
+* Anagram Check
+
+### Linked List
+
+* Singly, Doubly, Circular
+* Reversal
+* Detect Loop (Floyd’s Cycle)
+
+### Stack & Queue
+
+* Stack using Array & Linked List
+* Queue using Array & Linked List
+* Circular Queue, Deque
+* Infix to Postfix
+
+### Trees
+
+* Binary Tree, BST
+* Tree Traversals (Inorder, Preorder, Postorder)
+* Height, Diameter
+* Lowest Common Ancestor
+
+### Graph
+
+* BFS, DFS
+* Dijkstra’s Algorithm
+* Topological Sort
+* Union-Find (Disjoint Set)
+
+### Sorting Algorithms
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+
+### Searching Algorithms
+
+* Linear Search
+* Binary Search
+* Binary Search on Rotated Array
+
+### Recursion & Backtracking
+
+* Factorial, Fibonacci
+* N-Queens Problem
+* Sudoku Solver
+
+### Dynamic Programming
+
+* 0/1 Knapsack
+* Longest Common Subsequence
+* Longest Increasing Subsequence
+* Matrix Chain Multiplication
+
+### Greedy Algorithms
+
+* Activity Selection
+* Huffman Coding
+* Fractional Knapsack
+
+### Bit Manipulation
+
+* Check even/odd
+* Count set bits
+* XOR properties
+
+### Heap & Priority Queue
+
+* Min Heap, Max Heap
+* Heap Sort
+
+### Trie
+
+* Insert and Search Word
+
+### Hashing
+
+* HashMap, HashSet
+* Frequency Count
+
+---
+
+These are the essential core concepts and algorithms every Java DSA learner should understand and practice.
 
