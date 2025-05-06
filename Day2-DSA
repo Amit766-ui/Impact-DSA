@@ -1,0 +1,57 @@
+Static Block & Constructor
+
+Constructors are used to initialise the objects for every class there will be a default constructor, whenever we create an object constructor will be called then object will be created.
+
+Constructor having class name are method properties.
+
+Eg-  
+public class q2{
+   public static void main(String args[]){
+       Demo d1=new Demo();
+       Demo d2=new Demo();
+   }
+}
+class Demo{
+   static{
+      System.out.println("Static Block");
+   }
+   Demo(){
+      System.out.println("Constructor");
+   }
+}
+
+Static-
+Static block will be created with a static keyword it will be called automatically no need to call it, either object or class.
+
+Static method- for a static method no need to call with a object, you can directly call with a class name and here static will act as instance or object.
+
+conditional statements-
+if-else, else if ladder, switch case
+conditional statements are used to check the condition and to print the relevant block in constant time.
+
+if(a<b){
+   System.ot.println("A is smaller");
+}else{
+  System.out.println("B is smaller");
+}
+
+conditional statements are used to get the output in constant time.
+when we know the range we prefer to use for loop. and when we don't know the range we prefer to use while loop.
+for(int i=0;i<n;i++){
+  System.ot.println("Increasing");
+}
+
+while(b<a){
+   System.ot.println("Increasing");
+}
+
+
+
+
+
+
+
+
+
+
+
