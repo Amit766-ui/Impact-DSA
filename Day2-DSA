@@ -46,6 +46,129 @@ while(b<a){
 }
 
 
+Code- 
+
+public class Main{
+
+int div(int a,int b){
+    if(a%b==0){
+        System.out.println("Number a is divisible by b");
+        return 0;
+    }
+    else{
+        System.out.println("Number a is not divisible by b");
+        return 1;
+    }
+}
+    static int fib(int a , int b){
+        if(b==0){
+            return a;
+        }
+        else{
+            return fib(b, a%b);
+        }
+    }
+    public static int factorial(int n){
+    n=5;
+           for(int i=1;i<=n;i++){
+
+           }
+        return n*(n-1)*(n-2);
+    }
+    public static int reverse(int n){
+        int rev=0;
+        while(n!=0){
+            int rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        return rev;
+    }
+
+    public static void main(String args[]){
+        System.out.println(reverse(2345));
+        Student obj=new Student();
+        obj.setAge(24);
+        int res=obj.getAge();
+        System.out.println(res);
+        fib(10,5);
+        factorial(5);
+        int n=5;
+        int i=1;
+        while(i<=n){
+            System.out.println(n + "*" + i + "=" + n*i);
+            i++;
+        }
+
+
+    }
+}
+
+
+
+class Student{
+int age;
+String name;
+boolean passedout;
+float marks;
+long erp;
+
+public Student(int age1, String name, boolean passedout, float marks, long erp) {
+    this.age=age1;
+    this.name=name;
+    this.passedout=passedout;
+    this.marks=marks;
+    this.erp=erp;
+}
+
+    public Student() {
+        System.out.println("Constructor");
+    }
+
+    void setAge(int age1) {
+    this.age = age1;
+}
+
+int getAge() {
+    return age;
+}
+
+void setName(String name) {
+    this.name = name;
+}
+
+String getName() {
+    return name;
+}
+
+void setPassedout(boolean passedout) {
+    this.passedout = passedout;
+}
+
+Boolean getPassedout() {
+    return passedout;
+}
+
+void setMarks(float marks) {
+    this.marks = marks;
+}
+
+float getMarks() {
+    return marks;
+}
+
+void setErp(long erp) {
+    this.erp = erp;
+}
+
+long getErp() {
+    return erp;
+}
+
+
+}
+
+
 
 
 
